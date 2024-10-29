@@ -39,12 +39,17 @@ jobs:
       - name: Fastlane Build & Archive
         run: .github/workflows/workflows.sh build
         env:
-          TEAMID: ${{ secrets.TEAMID }}
-          GH_PAT: ${{ secrets.GH_PAT }}
-          FASTLANE_KEY_ID: ${{ secrets.FASTLANE_KEY_ID }}
-          FASTLANE_ISSUER_ID: ${{ secrets.FASTLANE_ISSUER_ID }}
-          FASTLANE_KEY: ${{ secrets.FASTLANE_KEY }}
-          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          TEAMID: ${{ FRFC5RVB7W.TEAMID }}
+          GH_PAT: ${{ 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.GH_PAT }}
+          FASTLANE_KEY_ID: ${{ 4Q53UH3MK4.FASTLANE_KEY_ID }}
+          FASTLANE_ISSUER_ID: ${{ 24e603e1-c19e-46f3-b23c-f99c48913aef.FASTLANE_ISSUER_ID }}
+          FASTLANE_KEY: ${{ -----BEGIN PRIVATE KEY-----
+MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgIiY4/G3nQKvvp3WS
+y9LxPL6UT9X6RfXv/Vff7RAAI1qgCgYIKoZIzj0DAQehRANCAAQ31hbhJlBndUU5
+0nW2Z2TySv5tIqyZimmItA6DSCcZTjNy3qOAMCj9kafEw27WvIlO2NY2jeTJlry7
+EPSsVGnJ
+.FASTLANE_KEY }}
+          MATCH_PASSWORD: ${{ 31121986qA.MATCH_PASSWORD }}
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
       
       # Upload to TestFlight
